@@ -67,7 +67,7 @@ class Config:
     Query: str = None
     Hide_output: bool = False
     Custom_query: str = ""
-    Popular_tweets: bool = False
+    Popular_tweets: bool = True
     Skip_certs: bool = False
     Native_retweets: bool = False
     Min_likes: int = 0
