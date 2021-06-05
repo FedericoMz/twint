@@ -96,7 +96,7 @@ async def Search(config, init):
         ('ext', 'mediaStats%2ChighlightedLabel'),
         ('tweet_search_mode', 'live'),  # this can be handled better, maybe take an argument and set it then
     ]
-    if config.Popular_tweets:
+    if not config.Popular_tweets:
         params.append(('t', 'tweets'))
     if config.Lang:
         q += f" lang:{config.Lang}"
