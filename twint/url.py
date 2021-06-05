@@ -97,7 +97,7 @@ async def Search(config, init):
         ('tweet_search_mode', 'live'),  # this can be handled better, maybe take an argument and set it then
     ]
     if not config.Popular_tweets:
-        params.append(('f', 'tweets'))
+        params.append(('t', 'tweets'))
     if config.Lang:
         q += f" lang:{config.Lang}"
     if config.Query:
