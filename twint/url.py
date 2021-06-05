@@ -100,7 +100,7 @@ async def Search(config, init):
         params.append(('f', 'tweets'))
     if config.Lang:
         params.append(("l", config.Lang))
-        params.append(("lang", "en"))
+        params.append(("lang", "it"))
     if config.Query:
         q += f" from:{config.Query}"
     if config.Username:
